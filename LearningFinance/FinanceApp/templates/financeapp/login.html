@@ -1,0 +1,23 @@
+{% extends "financeapp/base.html" %}
+
+{% block content %}
+{% load static %}
+
+<link href="{% static 'FinanceApp/login.css' %}" rel="stylesheet">
+
+<div class="grid-container">
+    <div class="item3" align="center">
+        <form method="post" action="/login">
+            <h1 class="h3 mb-3 fw-normal">Please Login</h1>
+            <input name="username" type="email" id="inputEmail" class="form-control" placeholder="Email address"
+                required autofocus>
+            <input name="password" type="password" id="inputPassword" class="form-control" placeholder="Password"
+                required>
+            <input class="w-100 btn btn-lg btn-primary" type="submit" value="Login" name="action"></input>
+        </form>
+        </br>
+
+        <h4><a href="/FinanceApp/signup">Sign Up now!</a></h4>
+    </div>
+</div>
+{% endblock %}

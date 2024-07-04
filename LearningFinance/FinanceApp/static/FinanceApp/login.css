@@ -89,8 +89,8 @@ img {
 .grid-container {
     display: grid;
     grid-template-areas:
-        'menu menu main main main main '
-        'menu menu main main main main'
+        'menu menu main main right right '
+        'menu menu main main right right'
         'menu menu footer footer footer footer';
     gap: 10px;
     background-color: #3DA5D9;
@@ -104,4 +104,8 @@ img {
     color: #FFFFFF;
     padding: 20px 0;
     font-size: 30px;
+}
+
+.center {
+    text-align: center;
 }

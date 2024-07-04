@@ -10,3 +10,13 @@ from django.utils import timezone
 
 def index(request):
     return render(request, "financeapp/index.html")
+
+
+def login(request):
+
+    return render(request, "financeapp/login.html")
+
+
+def signUp(request):
+
+    return render(request, "financeapp/signup.html")
