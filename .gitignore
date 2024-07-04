@@ -1,2 +1,3 @@
-LearningFinance/run.bat
+LearningFinance/run.sh
 SUPERUSER.txt
+env/*
