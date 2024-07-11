@@ -7,33 +7,33 @@ Backend written in django using integrated database and fronted written in HTML 
 # Running the application
 Create python environment:
 
-    - python -m venv env
+    python -m venv env
 Enter environment:
 
 Windows:
 
-    - env\scripts\activate
+    env\scripts\activate
 
 Linux / MacOS:
 
-    - source env/bin/activate
-    
+    source env/bin/activate
+
 Download requirements:
 
-    - pip install -r requirements.txt
+    pip install -r requirements.txt
 
 Enter project directory (Same for MacOS / Linux & Windows):
 
-    - cd Learning Finace
+    cd Learning Finace
 
 Run app:
 
 MacOS / Linux:
 
-    - python3 manage.py runserver 0.0.0.0:8000
+    python3 manage.py runserver 0.0.0.0:8000
 
 Windows:
 
-    - python manage.py runserver 0.0.0.0:8000
+    python manage.py runserver 0.0.0.0:8000
 
 Then, go to [localhost:8000/FinanceApp/](localhost:8000/FinanceApp/) to view your app locally on your machines
