@@ -11,9 +11,13 @@ Create python environment:
 Enter environment:
 
 Windows:
+
     - env\scripts\activate
+
 Linux / MacOS:
+
     - source env/bin/activate
+    
 Download requirements:
 
     - pip install -r requirements.txt
@@ -25,8 +29,11 @@ Enter project directory (Same for MacOS / Linux & Windows):
 Run app:
 
 MacOS / Linux:
+
     - python3 manage.py runserver 0.0.0.0:8000
+
 Windows:
+
     - python manage.py runserver 0.0.0.0:8000
 
 Then, go to [localhost:8000/FinanceApp/](localhost:8000/FinanceApp/) to view your app locally on your machines
