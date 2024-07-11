@@ -75,6 +75,7 @@ img {
 
 .item3 {
     grid-area: main;
+
 }
 
 .item4 {
@@ -96,14 +97,14 @@ img {
     background-color: #3DA5D9;
     padding: 10px;
     height: calc(100vh - 100px);
-
 }
 
 .grid-container>div {
     background-color: #73BFB8;
     color: #FFFFFF;
-    padding: 20px 0;
+    padding: 20px 20px;
     font-size: 30px;
+    border-radius: 20px 20px 20px 20px;
 }
 
 .center {
