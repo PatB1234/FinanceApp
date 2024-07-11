@@ -36,4 +36,4 @@ Windows:
 
     python manage.py runserver 0.0.0.0:8000
 
-Then, go to [localhost:8000/FinanceApp/](localhost:8000/FinanceApp/) to view your app locally on your machines
+Then, go to [This Link](localhost:8000/FinanceApp/) to view your app locally on your machines
