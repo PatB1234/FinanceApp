@@ -27,9 +27,7 @@ SECRET_KEY = 'django-insecure-bf=_+sh6m91cepkq*7z@7an9op3lixz0_xg_%5sa4))$4gk@^1
 DEBUG = True
 STATIC_URL = "static/"
 
-ALLOWED_HOSTS = [
-
-]
+ALLOWED_HOSTS = ['127.0.0.1', '.vercel.app']
 
 
 # Application definition
@@ -77,7 +75,7 @@ TEMPLATES = [
     },
 ]
 
-WSGI_APPLICATION = 'LearningFinance.wsgi.application'
+WSGI_APPLICATION = 'LearningFinance.wsgi.app'
 
 
 # Database
