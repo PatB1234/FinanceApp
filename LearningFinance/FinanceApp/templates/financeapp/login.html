@@ -7,10 +7,11 @@
 
 <div class="grid-container">
     <div class="item3" align="center">
-        <form method="post" action="/login">
+        <form method="post" action="/FinanceApp/login/">
+            {% csrf_token %}
             <h1 class="h3 mb-3 fw-normal">Please login:</h1>
-            <input name="username" type="email" id="inputEmail" class="form-control" placeholder="Email address"
-                required autofocus>
+            <input name="email" type="email" id="inputEmail" class="form-control" placeholder="Email address" required
+                autofocus>
             <input name="password" type="password" id="inputPassword" class="form-control" placeholder="Password"
                 required>
             <input class="w-100 btn btn-lg btn-primary" type="submit" value="Login" name="action"></input>
@@ -18,6 +19,25 @@
         </br>
 
         <h4><a href="/FinanceApp/signup">Don't have an account? Sign up:</a></h4>
+        <h3 class="message"></h3>
     </div>
 </div>
+<script type="text/javascript">
+    const messageField = document.querySelector(".message")
+    const sessionCode = Number("{{request.session.code}}")
+    if (sessionCode == 1) {
+
+        messageField.textContent = "Login successful"
+    } else if (sessionCode == 2) {
+
+        messageField.textContent = "Please login before trying to enter the website"
+    } else if (sessionCode == 3) {
+
+        messageField.textContent = "Username or password is incorrect, please try again"
+    } else {
+
+        messageField.textContent = "Please Login"
+    }
+    console.log(sessionCode)
+</script>
 {% endblock %}
