@@ -2,9 +2,9 @@ import sqlite3 as driver
 from sqlite3.dbapi2 import Cursor
 from pydantic import BaseModel
 from FinanceApp.models import User
+
 # DB_URL
 DATABASE_URL = '../db.sqlite3'
-
 
 # class User(BaseModel):
 
